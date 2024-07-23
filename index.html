@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors Game</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+    <h1>
+        <i class="fas fa-hand-rock"></i>
+        <i class="fas fa-hand-paper"></i>
+        <i class="fas fa-hand-scissors"></i>
+        ROCK PAPER SCISSORS GAME
+		<i class="fas fa-hand-rock"></i>
+        <i class="fas fa-hand-paper"></i>
+        <i class="fas fa-hand-scissors"></i>
+    </h1>
+	</header>
+	<div class="intro">
+		<h1>Are you ready to play the game?</h1>
+		<div class="intro-buttons">
+			<button id="yes" class="bn" onclick="location.href='test.html'">Yes</button>
+			<button id="no" class="bn" onclick="startGame(false)">No</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function startGame(ready) {
+			if (ready) {
+				document.querySelector('.intro').style.display = 'none';
+				document.querySelector('.container').style.display = 'block';
+			} else {
+				alert('Come back when you are ready!');
+			}
+		}
+	</script>
+</body>
+</html>
